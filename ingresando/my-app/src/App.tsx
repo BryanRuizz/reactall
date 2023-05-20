@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { HolaMundo } from './components/HolaMundo';
-import { ComponenteFuncional } from './components/ComponenteFuncional';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -10,10 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      {/*abajo de mi logo react*/}
-      <HolaMundo></HolaMundo>
-      <ComponenteFuncional></ComponenteFuncional>
-
+      <Login  />
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import React from "react";
 
 interface HolaMundoProps{
-
+    
 }//creacion de un componente 
+
+
 
 export const HolaMundo: React.FC<HolaMundoProps> =({}) =>{
     return(<>
