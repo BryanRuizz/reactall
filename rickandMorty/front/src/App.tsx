@@ -47,9 +47,9 @@ const [allCharacters,setAllCharacters] = React.useState<TypeCharacter [] | null>
      
         {
           allCharacters?.length !== 0 ? (
-            <Grid container spacing={2} direction={"column"} >
+            <Grid container spacing={2} direction={"row"} >
               {allCharacters!.map((character)=>(
-                <Grid item>
+                <Grid item xs={3}>
               <CardComponent key={character.id} image={character.image} name={character.name} species={character.species}status={character.status} />
               </Grid>
               ))}
