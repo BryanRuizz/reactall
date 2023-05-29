@@ -7,12 +7,14 @@ const deposit = () =>{
         //action deposit_money
         type:"DEPOSIT_MONEY",
         payload: 10,
+        bank: "bancomer"
     };
 };
 const withdraw = () =>{
     return{
         type:"WITHDRAW",
         payload: -10,
+        bank:"lolbank"
     };
 };
 

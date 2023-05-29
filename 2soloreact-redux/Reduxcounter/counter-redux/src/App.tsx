@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'; //para las rutas
 import Counter from './components/Counter';//cuando lo llamas abajo se hace la importacion sola
 
+
 function App() {
   return (
     <div className="App">

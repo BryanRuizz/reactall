@@ -1,5 +1,6 @@
 const inicialState = {
     amount:0,
+    bank:"BBVA"
     //amount es una variable de esatdo inicial
 
 };
@@ -14,13 +15,26 @@ export default (state = inicialState,action:any) =>{
         return{
             //... crea una copia de 
             ...state,
-            amount: state.amount+10
+            amount: state.amount+10,
+            bank: action.bank,
+            
+
         }
     }
     if(action.type =="WITHDRAW"){
         return{
             ...state,
-            amount: state.amount-10
+            amount: state.amount-10,
+            bank: action.bank,
         }
     }
+    return state;
 }//aaa
+
+// selecciona del amount actual quiere decir que toma el valor actual de lo que tenemos
+export const selectCurrentAmount = (state: { amountReducer: { amount: any;}; }) =>{
+    return  state.amountReducer.amount; //regresa lo que tiene
+}
+export const selectCurrentBank = (state: { amountReducer: { bank: any;}; }) =>{
+    return  state.amountReducer.bank; //regresa lo que tiene
+}
