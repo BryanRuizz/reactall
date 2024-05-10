@@ -24,6 +24,7 @@ const [allCharacters,setAllCharacters] = React.useState<TypeCharacter [] | null>
     //hacemos un llamado a la funcion que creamos en character, llamda getALL en el obj characters
     //parametro page:1 indica el param y num de pag qe queremos
     characters.getAll({page: 1}).then((r)=>{
+      //console.log(r);
       //metodo then para manejar la llamada a getall, param ,r es la resp de la llamda 
       setAllCharacters(r.data.results)
       //accedemos a r.datos.reults para visualizar los datos que llegaron

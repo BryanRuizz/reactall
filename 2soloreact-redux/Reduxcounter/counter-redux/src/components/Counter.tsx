@@ -19,7 +19,6 @@ interface CounterProps {
     amount:any
     bank:any
 }
-
 //creacion del componente
 //La funcion o componente Counter regresa solo una vista
 // en la cual llamamos el evento click y llamamos una funcion deposit desde mis acciones importadas
